@@ -4,7 +4,7 @@ interface Engine2{
     fun start()
 }
 
-class GasEngine2P():Engine2{
+class GasEngine2():Engine2{
     override fun start() {
         println("Gas Engine Started")
     }
@@ -26,10 +26,10 @@ class ElectricEngine2():Engine2{
 
 
 
-class Car3{
-    private val gasEngine:GasEngine = GasEngine()
-    private val hybridEngine:HybridEngine = HybridEngine()
-    private val electricEngine:ElectricEngine = ElectricEngine()
+class Car2{
+    private val gasEngine:GasEngine2 = GasEngine2()
+    private val hybridEngine:HybridEngine2 = HybridEngine2()
+    private val electricEngine:ElectricEngine2 = ElectricEngine2()
 
     fun start(engineType:Int){
         if(engineType == 1){
@@ -44,10 +44,10 @@ class Car3{
     }
 }
 
-class Plane{
-    private val gasEngine:GasEngine = GasEngine()
-    private val hybridEngine:HybridEngine = HybridEngine()
-    private val electricEngine:ElectricEngine = ElectricEngine()
+class Plane2{
+    private val gasEngine:GasEngine2 = GasEngine2()
+    private val hybridEngine:HybridEngine2 = HybridEngine2()
+    private val electricEngine:ElectricEngine2 = ElectricEngine2()
 
     fun start(engineType:Int){
         if(engineType == 1){
@@ -63,13 +63,13 @@ class Plane{
 }
 
 fun main(){
-    val car = Car3()
+    val car = Car2()
     car.start(1)
 
-    val car2 = Car3()
+    val car2 = Car2()
     car2.start(2)
 
-    val car3 = Car3()
+    val car3 = Car2()
     car3.start(3)
 
     val plane = Plane()
