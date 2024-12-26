@@ -72,12 +72,12 @@ fun main(){
     val car3 = Car2()
     car3.start(3)
 
-    val plane = Plane()
+    val plane = Plane2()
     plane.start(1)
 
-    val plane2 = Plane()
+    val plane2 = Plane2()
     plane2.start(2)
 
-    val plane3 = Plane()
+    val plane3 = Plane2()
     plane3.start(3)
 }
