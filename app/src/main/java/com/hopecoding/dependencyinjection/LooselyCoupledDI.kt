@@ -1,25 +1,22 @@
 package com.hopecoding.dependencyinjection
 
-interface Engine2{
-    fun start()
-}
 
-class GasEngine():Engine2{
-    override fun start() {
+class GasEngine(){
+     fun start() {
         println("Gas Engine Started")
     }
 
 }
 
-class HybridEngine():Engine2{
-    override fun start() {
+class HybridEngine(){
+    fun start() {
         println("Hybrid Engine Started")
     }
 
 }
 
-class ElectricEngine():Engine2{
-    override fun start() {
+class ElectricEngine(){
+     fun start() {
         println("Electric Engine Started")
     }
 }
