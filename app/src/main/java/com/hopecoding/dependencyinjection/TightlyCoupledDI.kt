@@ -2,7 +2,6 @@ package com.hopecoding.dependencyinjection
 
 class Engine {
     fun start() {
-
     }
 }
 
