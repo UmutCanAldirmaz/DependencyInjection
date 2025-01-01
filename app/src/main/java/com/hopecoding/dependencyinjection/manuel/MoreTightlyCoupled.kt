@@ -1,24 +1,24 @@
-package com.hopecoding.dependencyinjection
+package com.hopecoding.dependencyinjection.manuel
 
 interface Engine2{
     fun start()
 }
 
-class GasEngine2():Engine2{
+class GasEngine2(): Engine2 {
     override fun start() {
         println("Gas Engine Started")
     }
 
 }
 
-class HybridEngine2():Engine2{
+class HybridEngine2(): Engine2 {
     override fun start() {
         println("Hybrid Engine Started")
     }
 
 }
 
-class ElectricEngine2():Engine2{
+class ElectricEngine2(): Engine2 {
     override fun start() {
         println("Electric Engine Started")
     }
@@ -27,9 +27,9 @@ class ElectricEngine2():Engine2{
 
 
 class Car2{
-    private val gasEngine:GasEngine2 = GasEngine2()
-    private val hybridEngine:HybridEngine2 = HybridEngine2()
-    private val electricEngine:ElectricEngine2 = ElectricEngine2()
+    private val gasEngine: GasEngine2 = GasEngine2()
+    private val hybridEngine: HybridEngine2 = HybridEngine2()
+    private val electricEngine: ElectricEngine2 = ElectricEngine2()
 
     fun start(engineType:Int){
         if(engineType == 1){
@@ -45,9 +45,9 @@ class Car2{
 }
 
 class Plane2{
-    private val gasEngine:GasEngine2 = GasEngine2()
-    private val hybridEngine:HybridEngine2 = HybridEngine2()
-    private val electricEngine:ElectricEngine2 = ElectricEngine2()
+    private val gasEngine: GasEngine2 = GasEngine2()
+    private val hybridEngine: HybridEngine2 = HybridEngine2()
+    private val electricEngine: ElectricEngine2 = ElectricEngine2()
 
     fun start(engineType:Int){
         if(engineType == 1){
