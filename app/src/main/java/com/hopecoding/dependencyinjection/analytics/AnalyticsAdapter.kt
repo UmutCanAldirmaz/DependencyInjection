@@ -1,5 +1,7 @@
 package com.hopecoding.dependencyinjection.analytics
 
-class AnalyticsAdapter(private val service: AnalyticsService){
+import javax.inject.Inject
+
+class AnalyticsAdapter @Inject constructor(val service: AnalyticsService){
 
 }
